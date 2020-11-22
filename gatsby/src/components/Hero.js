@@ -27,8 +27,11 @@ const HeroWrapper = styled.div`
         flex-direction: column;
         padding-bottom: 4rem;
     }
+    .hero-image {
+        position: relative;
+        height: auto;
+    }
 `
-
 
 export default function Hero({ children, image, headline }) {
   return (
@@ -40,7 +43,7 @@ export default function Hero({ children, image, headline }) {
                 {children}
             </div>
             <div className="hero-image"> 
-                <Img fluid={image} />
+                <Img className="styled-image" fluid={image} />
             </div>
         </div>
     </HeroWrapper>

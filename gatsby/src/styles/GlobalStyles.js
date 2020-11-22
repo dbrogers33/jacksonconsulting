@@ -12,6 +12,16 @@ const GlobalStyles = createGlobalStyle`
           font-size: 16px;
         }
     }
+  /* Fixes the image in hero seciton */
+  .styled-image {
+    margin-top: -4rem;
+    @media only screen and (min-width: 650px) {
+      position: absolute !important;
+      bottom: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
     /* Position and sizing of burger button */
 .bm-burger-button {
   position: absolute;
