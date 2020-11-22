@@ -4,6 +4,9 @@ import { slide as Menu } from 'react-burger-menu'
 import styled from 'styled-components'
 
 const MenuWrapper = styled.div`
+    width: 100%;
+    background: #fff;
+    height: 76px;
     @media only screen and (min-width: 670px) {
         display: none;
     }

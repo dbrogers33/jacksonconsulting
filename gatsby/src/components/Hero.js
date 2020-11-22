@@ -6,7 +6,9 @@ import Button from '../components/Button'
 const HeroWrapper = styled.div`
     background: var(--blue);
     color: white;
-    padding-top: 6rem;
+    @media only screen and (min-width: 650px) {
+        padding-top: 6rem;
+    }
     p {
         color: white;
     }

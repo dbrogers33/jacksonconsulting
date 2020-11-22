@@ -44,7 +44,7 @@ const Services = styled.div`
   background: var(--gray);
   text-align: center;
   .container{
-    width: 95%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2.5rem 0;

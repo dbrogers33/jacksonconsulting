@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
  
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: var(--blue);
 }
 
 /* Color/shape of burger icon bars on hover*/
