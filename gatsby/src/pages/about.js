@@ -8,7 +8,7 @@ import CTA from '../components/cta'
 
 const About = styled.section`
   width: 90%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   ul {
     list-style-type: none;
