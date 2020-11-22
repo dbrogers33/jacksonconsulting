@@ -12,7 +12,7 @@ import LogoSlider from '../components/LogoSlider'
 const Referrals = styled.div`
   background: var(--gray);
   .container {
-    width: 95%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2.5rem 0;
@@ -23,7 +23,7 @@ const Referrals = styled.div`
 `
 const About = styled.div`
   .container {
-    width: 95%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 3.5rem 0;
@@ -105,7 +105,7 @@ const Services = styled.div`
 const Team = styled.div`
   text-align: center;
   .container {
-    width: 95%;
+    width: 90%;
     max-width: 900px;
     margin: 0 auto;
     padding: 3.5rem 0;

@@ -12,7 +12,9 @@ const Services = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   ul {
-    column-count: 2;
+    @media only screen and (min-width: 650px) {
+      column-count: 2;
+    }
     list-style-type: none;
     font-family: 'Open Sans';
     line-height: 1.75rem;

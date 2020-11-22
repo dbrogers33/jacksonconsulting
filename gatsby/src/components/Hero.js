@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Img from "gatsby-image"
-import Button from '../components/Button'
 
 const HeroWrapper = styled.div`
     background: var(--blue);
@@ -30,6 +29,7 @@ const HeroWrapper = styled.div`
     }
 `
 
+
 export default function Hero({ children, image, headline }) {
   return (
     <HeroWrapper>
@@ -39,7 +39,7 @@ export default function Hero({ children, image, headline }) {
                 <p>“We go the extra effort to make sure that your company is not only meeting government regulations, but develop a custom plan so your team can manage themselves.” - Justin Jackson</p>
                 {children}
             </div>
-            <div> 
+            <div className="hero-image"> 
                 <Img fluid={image} />
             </div>
         </div>

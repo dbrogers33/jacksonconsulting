@@ -7,6 +7,7 @@ const CTABlock = styled.div`
     border: var(--blue) solid 3px;
     width: auto;
     margin-bottom: 4rem;
+    margin-top: 4rem;
     @media only screen and (min-width: 650px) {
       margin: 4rem;
     }
