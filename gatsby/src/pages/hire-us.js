@@ -59,7 +59,7 @@ const HireUs = () => (
     <Hero headline="Get in touch with us" />
 
     <Container>
-      <NetlifyForm name='Contact Form'>
+      <NetlifyForm name='Hire Us Form'>
         {({ loading, error, success }) => (
           <div>
             {loading &&
@@ -73,7 +73,7 @@ const HireUs = () => (
             }
             {!loading && !success &&
               <Form>
-                <h2>Contact Us</h2>
+                <h2>Hire Us</h2>
                 <input type='text' name='First Name' placeholder="First Name" required />
                 <input type='text' name='Last Name' placeholder="Last Name" required />
                 <input type='text' name='Company' placeholder="Company Name" />

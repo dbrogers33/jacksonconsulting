@@ -7,7 +7,10 @@ const GlobalStyles = createGlobalStyle`
         --dark-green: #7CAD3B;
         --gray: #FCFBFB;
         --dark-gray: #9B9B9B;
-        font-size: 16px;
+        font-size: 18px;
+        @media only screen and (max-width: 650px) {
+          font-size: 16px;
+        }
     }
     /* Position and sizing of burger button */
 .bm-burger-button {

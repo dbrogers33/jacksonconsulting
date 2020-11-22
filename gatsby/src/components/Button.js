@@ -17,6 +17,10 @@ const Button = styled(Link)`
     &:hover {
       background: var(--dark-green);
     }
+    @media only screen and (max-width: 670px) {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
 `
 
 export default function Footer({ link }) {

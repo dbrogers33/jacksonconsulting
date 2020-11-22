@@ -125,6 +125,14 @@ const Team = styled.div`
   }
 `
 
+const StyledLink = styled(Link)`
+  color: var(--green);
+  transition: ease .2s;
+  &:hover {
+    color: var(--dark-green);
+  }
+`
+
 const IndexPage = ({ data }) => (
   <>
     <Hero headline="safety consulting done the right way." image={data.justin.childImageSharp.fluid}><Button link="/hire-us/">Hire Us</Button></Hero>
@@ -175,7 +183,7 @@ const IndexPage = ({ data }) => (
             </div>
           </div>
         </div>
-        <h3>That’s not all we do. Take a look at all <Link to="/services/">services that we offer.</Link></h3>
+        <h3>That’s not all we do. Take a look at all <StyledLink to="/services/">services that we offer.</StyledLink></h3>
       </div>
     </Services>
 
