@@ -11,18 +11,18 @@ const GlobalStyles = createGlobalStyle`
     }
     /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
+  position: absolute;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  right: 24px;
+  top: 24px;
 }
  
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #373a47;
 }
- 
+
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
   background: #a90000;
@@ -36,7 +36,7 @@ const GlobalStyles = createGlobalStyle`
  
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: var(--blue);
 }
  
 /*

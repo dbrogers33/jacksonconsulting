@@ -9,11 +9,17 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const Logos = styled.div`
+    margin: 0 3rem;
     .slick-arrow::before {
         color: var(--green);
     }
     .client-logo {
-        margin: 3rem;
+        margin: 1rem;
+    }
+    @media only screen and (min-width: 650px) {
+        .client-logo {
+            margin: 3rem;
+        }
     }
 `
 
@@ -26,6 +32,22 @@ export default function SimpleSlider() {
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            }
+          },
+      ]
     };
     return (
         <StaticQuery

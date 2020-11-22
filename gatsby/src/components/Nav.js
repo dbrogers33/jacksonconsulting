@@ -5,6 +5,9 @@ import styled from 'styled-components';
 import MobileNav from '../components/MobileNav'
 
 const NavStyles = styled.nav`
+  @media only screen and (max-width: 670px) {
+    display: none;
+  }
   margin-bottom: 3rem;
   width: 90%;
   max-width: 1300px;
@@ -67,7 +70,7 @@ export default function Nav() {
     return (
       <>
       <NavStyles>
-        {/* <div className="menu">
+        <div className="menu">
           <img className="logo" src="logo.svg" />
           <div className="contact-bar"><p>555-555-5555 | info@jacksonconsultingfirmllc.com</p></div>
           <ul>
@@ -84,7 +87,7 @@ export default function Nav() {
               <StyledLink to="/contact/">Contact</StyledLink>
             </li>
           </ul>
-        </div> */}
+        </div>
       </NavStyles>
       <MobileNav />
       </>

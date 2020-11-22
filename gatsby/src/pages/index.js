@@ -175,7 +175,7 @@ const IndexPage = ({ data }) => (
             </div>
           </div>
         </div>
-        <h3>That’s not all we do. Take a look at all <span className="green">services that we offer.</span></h3>
+        <h3>That’s not all we do. Take a look at all <Link to="/services/">services that we offer.</Link></h3>
       </div>
     </Services>
 
