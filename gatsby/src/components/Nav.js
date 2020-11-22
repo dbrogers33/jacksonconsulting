@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
+import MobileNav from '../components/MobileNav'
+
 const NavStyles = styled.nav`
   margin-bottom: 3rem;
   width: 90%;
@@ -63,8 +65,9 @@ const StyledLink = styled(Link)`
 
 export default function Nav() {
     return (
+      <>
       <NavStyles>
-        <div className="menu">
+        {/* <div className="menu">
           <img className="logo" src="logo.svg" />
           <div className="contact-bar"><p>555-555-5555 | info@jacksonconsultingfirmllc.com</p></div>
           <ul>
@@ -81,8 +84,10 @@ export default function Nav() {
               <StyledLink to="/contact/">Contact</StyledLink>
             </li>
           </ul>
-        </div>
+        </div> */}
       </NavStyles>
+      <MobileNav />
+      </>
     );
   }
   

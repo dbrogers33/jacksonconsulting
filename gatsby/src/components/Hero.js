@@ -14,8 +14,10 @@ const HeroWrapper = styled.div`
         width: 90%;
         max-width: 1200px;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        @media only screen and (min-width: 650px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
     .vertical-center {
         display: flex;

@@ -27,9 +27,11 @@ const About = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     padding: 3.5rem 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
+    @media only screen and (min-width: 650px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 3rem;
+    }
   }
   .vertical-center {
     display: flex;
@@ -59,10 +61,12 @@ const Services = styled.div`
     color: var(--green);
   }
   .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 2rem;
     margin: 2rem 0 5rem 0;
+    @media only screen and (min-width: 650px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 2rem;
+    }
   }
   .card {
     box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.05);
@@ -70,6 +74,9 @@ const Services = styled.div`
     background: white;
     padding: 1rem 3rem 4rem 3rem;
     position: relative;
+    @media only screen and (max-width: 650px) {
+      margin: 4rem 0;
+    }
   }
   .round-button {
     background: var(--green);
