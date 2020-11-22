@@ -36,7 +36,10 @@ const Services = styled.div`
 
 const IndexPage = () => (
   <>
-    <Hero headline="Here's how we can improve your company" />
+    <Hero 
+      headline="Here's how we can improve your company"
+      copy="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist witha specific task for an existing company that just needs a professional solution."
+    />
     <Services>
       <h2>Consulting Services</h2>
       <ul>

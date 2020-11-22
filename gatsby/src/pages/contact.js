@@ -56,7 +56,10 @@ const Form = styled.div`
 
 const IndexPage = () => (
   <>
-    <Hero headline="Get in touch with us" />
+    <Hero 
+      headline="Get in touch with us"
+      copy="JCF can bring value to your company's safety culture by leading these efforts from your facility or site rather than an off-site office."
+    />
 
     <Container>
       <NetlifyForm name='Contact Form'>

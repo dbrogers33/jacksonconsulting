@@ -137,7 +137,12 @@ const StyledLink = styled(Link)`
 const IndexPage = ({ data }) => (
   <>
 
-      <Hero headline="safety consulting done the right way." image={data.justin.childImageSharp.fluid}><Button link="/hire-us/">Hire Us</Button></Hero>
+      <Hero 
+        headline="safety consulting done the right way." 
+        copy="“We go the extra effort to make sure that your company is not only meeting government regulations, but develop a custom plan so your team can manage themselves.” - Justin Jackson" 
+        image={data.justin.childImageSharp.fluid}>
+        <Button link="/hire-us/">Hire Us</Button>
+      </Hero>
 
     <Referrals>
       <div className="container">

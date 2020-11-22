@@ -56,7 +56,10 @@ const Form = styled.div`
 
 const HireUs = () => (
   <>
-    <Hero headline="Get in touch with us" />
+    <Hero 
+      headline="Let's get started"
+      copy="Interested in hiring Jackson Consulting Firm to improve your safety operations? Fill out the form below with as much detail as possible and we'll contact you for a discovery call."
+    />
 
     <Container>
       <NetlifyForm name='Hire Us Form'>

@@ -33,13 +33,13 @@ const HeroWrapper = styled.div`
     }
 `
 
-export default function Hero({ children, image, headline }) {
+export default function Hero({ children, image, headline, copy }) {
   return (
     <HeroWrapper>
         <div className="container">
             <div className="vertical-center">
                 <h1>{headline}</h1>
-                <p>“We go the extra effort to make sure that your company is not only meeting government regulations, but develop a custom plan so your team can manage themselves.” - Justin Jackson</p>
+                <p>{copy}</p>
                 {children}
             </div>
             <div className="hero-image"> 

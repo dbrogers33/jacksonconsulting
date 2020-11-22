@@ -33,7 +33,10 @@ li:before {
 
 const SecondPage = () => (
   <>
-    <Hero headline="A REDEFINED APPROACH TO PROFESSIONAL CONSULTING"/>
+    <Hero 
+      headline="A REDEFINED APPROACH TO PROFESSIONAL CONSULTING"
+      copy="We focus more on being a professional employer advocate service by providing onsite professional suppport rather than the typical conslult and leave approach."
+    />
 
     <About>
       <h2>About Jackson Consulting Firm</h2>
