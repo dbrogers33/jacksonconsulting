@@ -1,8 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import styled from 'styled-components';
-import SEO from '../components/SEO';
 import Hero from '../components/Hero'
 import HireFrom from '../components/hire-us-form'
 
