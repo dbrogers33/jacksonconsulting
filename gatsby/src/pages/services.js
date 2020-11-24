@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import styled from 'styled-components'
 
 import Image from "../components/image"
@@ -34,13 +34,21 @@ const Services = styled.div`
   }
 `
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <>
     <Hero 
       headline="Here's how we can improve your company"
       copy="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist witha specific task for an existing company that just needs a professional solution."
     />
     <Services>
+      <h2>Featured Services</h2>
+      <div>
+      {data.allSanityServices.nodes.map((service) => (
+            <div key={service.id}>
+              <Link to={'/services/' + service.slug.current + '/'}>{service.service}</Link>
+            </div>
+          ))}
+      </div>
       <h2>Consulting Services</h2>
       <ul>
         <li>Breath & Alchol Testing (BAT) - DOT/NON-DOT</li>
@@ -112,3 +120,17 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    allSanityServices {
+      nodes {
+        slug {
+          current
+        }
+        service
+        id
+      }
+    }
+  }
+`

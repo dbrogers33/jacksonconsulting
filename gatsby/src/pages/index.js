@@ -233,21 +233,21 @@ const IndexPage = ({ data }) => (
         <h2>For your very specific industry, we have <span className="green">highly-tailored safety solutions</span></h2>
         <div className="grid">
           <div className="card">
-            <h3>OSHA 30 Hour Certificate</h3>
+            <h3>Onsite Safety Staffing and Support</h3>
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <div className="round-button vertical-center">
               <p>G</p>
             </div>
           </div>
           <div className="card">
-            <h3>OSHA 30 Hour Certificate</h3>
+            <h3>Safety Training</h3>
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <div className="round-button vertical-center">
               <p>G</p>
             </div>
           </div>
           <div className="card"> 
-            <h3>OSHA 30 Hour Certificate</h3>
+            <h3>Site and Facility Safety Audits</h3>
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <div className="round-button vertical-center">
               <p>G</p>
