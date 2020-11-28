@@ -29,6 +29,7 @@ export default function ServicePage({ data: { team } }) {
     <>
     <SEO
       title={team.firstname + " " + team.lastname + " | " + team.jobtitle}
+      description={team.firstname + " " + team.lastname + " is the " + team.jobtitle + " at Jackson Consulting Firm. They are here to help you to develop the best safety program for your company."}
     />
     <Hero
         headline={team.firstname + " " + team.lastname}

@@ -55,6 +55,7 @@ const HireUs = () => (
   <>
     <SEO
       title="Hire Us"
+      description="Want to hire Jackson Consulting Firm to help with your companies safety needs? We customize our every proceedure to make sure we best serving your needs."
     />
     
     <Hero 

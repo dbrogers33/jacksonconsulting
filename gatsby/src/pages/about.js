@@ -34,6 +34,7 @@ const SecondPage = () => (
   <>
     <SEO
       title="About Us"
+      description="We focus more on being a professional employer advocate service by providing onsite professional suppport rather than the typical conslult and leave approach."
     />
     <Hero 
       headline="A REDEFINED APPROACH TO PROFESSIONAL CONSULTING"

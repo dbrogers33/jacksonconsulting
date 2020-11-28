@@ -56,6 +56,7 @@ const IndexPage = () => (
   <>
     <SEO
       title="Contact Us"
+      description="JCF can bring value to your company's safety culture by leading these efforts from your facility or site. Contact us to learn more on how we can serve you."
     />
     
     <Hero 

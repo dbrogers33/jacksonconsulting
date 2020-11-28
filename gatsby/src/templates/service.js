@@ -16,6 +16,7 @@ export default function ServicePage({ data: { service } }) {
     <>
     <SEO
       title={service.service}
+      description={"Jackson Consulting Firm can assist you with " + service.service + ". Our team can help develop the right safety program for your company."}
     />
     <Hero
         headline={service.service}

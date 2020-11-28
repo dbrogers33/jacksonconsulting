@@ -61,6 +61,7 @@ const IndexPage = ({ data }) => (
   <>
     <SEO
       title="Our Services"
+      description="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist witha specific task for an existing company that just needs a professional solution."
     />
     <Hero 
       headline="Here's how we can improve your company"
