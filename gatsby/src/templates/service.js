@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Hero from '../components/Hero'
-import HireFrom from '../components/hire-us-form'
+import HireForm from '../components/hire-us-form'
 import SEO from '../components/seo'
 
 const Container = styled.div`
@@ -23,9 +23,9 @@ export default function ServicePage({ data: { service } }) {
     />
       <Container>
         <p>{service.description}</p>
-        <HireFrom 
+        <HireForm 
           header={"Hire Us for " + service.service}
-          name={"Hire Request - " + service.service  }
+          formName={"Hire Request - " + service.service  }
         />
       </Container>
     </>
