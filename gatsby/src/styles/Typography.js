@@ -5,6 +5,7 @@ const Typography = createGlobalStyle`
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Oswald';
         text-transform: uppercase;
+        font-display: swap;
     }
     h1 {
         font-size: 3rem;
@@ -32,6 +33,7 @@ const Typography = createGlobalStyle`
         font-size: 1rem;
         color: #767676;
         margin-top: 0;
+        font-display: swap;
     }
 `
 
