@@ -75,8 +75,19 @@ const Services = styled.div`
     background: white;
     padding: 1rem 3rem 4rem 3rem;
     position: relative;
+    transition: ease .3s; 
     @media only screen and (max-width: 650px) {
       margin: 4rem 0;
+    }
+    &:hover {
+      box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.15);
+      margin-top: -3px;
+      margin-bottom: 3px;
+      .round-button {
+        box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.05);
+        width: 4.75rem;
+        height: 4.75rem;
+      }
     }
   }
   .round-button {
@@ -92,6 +103,7 @@ const Services = styled.div`
     transform: translateY(50%);
     margin-left: auto;
     margin-right: auto;
+    transition: ease .3s;
     p {
       color: var(--blue);
     }
@@ -198,31 +210,10 @@ const TeamMembers = styled.div`
   }
 `
 const CardLink = styled(Link)`
-  text-decoration: none;
-  transition: ease .3s;
-  display:inline-block;
-  
-  .card {
-    transition: ease .3s;
-  }
-  &:hover {
-    .card {
-      box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.15);
-      margin-top: -3px;
-      margin-bottom: 3px;
-    }
-    .round-button {
-      width: 4.75rem;
-      height: 4.75rem;
-      box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.095);
-    }
-  }
-  .round-button {
-    transition: ease .3s;
-  }
-  h3 {
-    color: black;
-  }
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
 `
 
 
@@ -261,35 +252,32 @@ const IndexPage = ({ data }) => (
         <h2>For your very specific industry, we have <span className="green">highly-tailored safety solutions</span></h2>
         <div className="grid">
           
-          <CardLink to="/services/onsite-safety-staffing-and-support/">
             <div className="card">
+            <CardLink to="/services/onsite-safety-staffing-and-support/"></CardLink>
               <h3>Onsite Safety Staffing and Support</h3>
               <p>JCF focuses more on being a professional employer advocate service by providing onsite professional support tailored to the client's need.</p>
               <div className="round-button vertical-center">
                 <img src="/arrow.svg" style={{ width: '35%', margin: '0 auto' }}/>
               </div>
             </div>
-          </CardLink>
           
-          <CardLink to="/services/safety-training/">
             <div className="card">
+              <CardLink to="/services/safety-training/"></CardLink>
               <h3>Safety Training</h3>
               <p>Providing safety training for your employees is the right thing to do. We understand that training is expensive and difficult to schedule.</p>
               <div className="round-button vertical-center">
                 <img src="/arrow.svg" style={{ width: '35%', margin: '0 auto' }}/>
               </div>
             </div>
-          </CardLink>
           
-          <CardLink to="/services/site-facility-safety-audits/">
-            <div className="card"> 
+            <div className="card">
+            <CardLink to="/services/site-facility-safety-audits/"></CardLink>
               <h3>Site and Facility Safety Audits</h3>
               <p>Job site and facility audits are a necessary part of any safety program. Sometimes you may need an outside set of eyes.</p>
               <div className="round-button vertical-center">
                 <img src="/arrow.svg" style={{ width: '35%', margin: '0 auto' }}/>
               </div>
             </div>
-          </CardLink>
         
         </div>
         <h3>That’s not all we do. Take a look at all <StyledLink to="/services/">services that we offer.</StyledLink></h3>

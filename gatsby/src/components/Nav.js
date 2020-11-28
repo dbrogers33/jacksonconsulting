@@ -71,7 +71,7 @@ export default function Nav() {
       <>
       <NavStyles>
         <div className="menu">
-          <img className="logo" src="logo.svg" />
+          <img className="logo" src="/logo.svg" />
           <div className="contact-bar"><p>270-254-0261 | info@jacksonconsultingfirmllc.com</p></div>
           <ul>
             <li>
