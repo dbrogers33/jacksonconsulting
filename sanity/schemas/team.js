@@ -1,9 +1,12 @@
+import { AiOutlineTeam } from 'react-icons/ai'
+
 export default {
     // Computer Name
     name: 'team',
     // Visible Title
     title: 'Team',
     type: 'document',
+    icon: AiOutlineTeam,
     fields: [
         {
             name: 'firstname',
