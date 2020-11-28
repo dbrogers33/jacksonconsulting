@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Hero from '../components/Hero'
 import HireFrom from '../components/hire-us-form'
+import SEO from '../components/seo'
 
 const Container = styled.div`
   width: 90%;
@@ -13,14 +14,17 @@ const Container = styled.div`
 export default function ServicePage({ data: { service } }) {
   return (
     <>
+    <SEO
+      title={service.service}
+    />
     <Hero
         headline={service.service}
     />
       <Container>
         <p>{service.description}</p>
         <HireFrom 
-          header={'Hire Us for ' + service.service}
-          name={'Hire Request -' + ' ' + service.service  }
+          header={"Hire Us for " + service.service}
+          name={"Hire Request - " + service.service  }
         />
       </Container>
     </>

@@ -43,7 +43,7 @@ export default function Hero({ children, image, headline, copy }) {
                 {children}
             </div>
             <div className="hero-image"> 
-                <Img className="styled-image" fluid={image} />
+                <Img className="styled-image" fluid={image} alt="" />
             </div>
         </div>
     </HeroWrapper>

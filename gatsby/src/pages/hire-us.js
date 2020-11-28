@@ -1,9 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import NetlifyForm from 'react-netlify-form'
 import styled from 'styled-components'
-
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
 
@@ -56,6 +53,10 @@ const Form = styled.div`
 
 const HireUs = () => (
   <>
+    <SEO
+      title="Hire Us"
+    />
+    
     <Hero 
       headline="Let's get started"
       copy="Interested in hiring Jackson Consulting Firm to improve your safety operations? Fill out the form below with as much detail as possible and we'll contact you for a discovery call."

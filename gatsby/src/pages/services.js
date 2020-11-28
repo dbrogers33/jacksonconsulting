@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import styled from 'styled-components'
 
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
 import CTA from "../components/cta"
@@ -60,6 +59,9 @@ const Services = styled.div`
 
 const IndexPage = ({ data }) => (
   <>
+    <SEO
+      title="Our Services"
+    />
     <Hero 
       headline="Here's how we can improve your company"
       copy="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist witha specific task for an existing company that just needs a professional solution."

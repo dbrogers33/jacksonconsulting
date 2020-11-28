@@ -1,9 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import NetlifyForm from 'react-netlify-form'
 import styled from 'styled-components'
 
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
 
@@ -56,6 +54,10 @@ const Form = styled.div`
 
 const IndexPage = () => (
   <>
+    <SEO
+      title="Contact Us"
+    />
+    
     <Hero 
       headline="Get in touch with us"
       copy="JCF can bring value to your company's safety culture by leading these efforts from your facility or site rather than an off-site office."

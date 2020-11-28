@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from 'styled-components';
 
 import SEO from "../components/seo"
@@ -33,6 +32,9 @@ li:before {
 
 const SecondPage = () => (
   <>
+    <SEO
+      title="About Us"
+    />
     <Hero 
       headline="A REDEFINED APPROACH TO PROFESSIONAL CONSULTING"
       copy="We focus more on being a professional employer advocate service by providing onsite professional suppport rather than the typical conslult and leave approach."

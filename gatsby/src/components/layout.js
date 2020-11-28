@@ -9,8 +9,6 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import SEO from '../components/seo'
 
-import Header from "./header"
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {

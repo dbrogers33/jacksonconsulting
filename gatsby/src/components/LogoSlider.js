@@ -77,28 +77,28 @@ export default function SimpleSlider() {
             <Logos>
             <Slider {...settings}>
                 <div>
-                    <Img className="client-logo" fluid={data.spotify.childImageSharp.fluid} />
+                    <Img className="client-logo" fluid={data.spotify.childImageSharp.fluid} alt="" />
                 </div>
                 <div>
-                    <Img className="client-logo" fluid={data.google.childImageSharp.fluid} />
+                    <Img className="client-logo" fluid={data.google.childImageSharp.fluid} alt="" />
                 </div>
                 <div>
-                    <Img className="client-logo" fluid={data.spotify.childImageSharp.fluid} />
+                    <Img className="client-logo" fluid={data.spotify.childImageSharp.fluid} alt="" />
                 </div>
                 <div>
-                    <Img className="client-logo" fluid={data.google.childImageSharp.fluid} />
+                    <Img className="client-logo" fluid={data.google.childImageSharp.fluid} alt="" />
                 </div>
                 <div>
-                    <Img className="client-logo" fluid={data.spotify.childImageSharp.fluid} />
+                    <Img className="client-logo" fluid={data.spotify.childImageSharp.fluid} alt="" />
                 </div>
                 <div>
-                    <Img className="client-logo" fluid={data.google.childImageSharp.fluid} />
+                    <Img className="client-logo" fluid={data.google.childImageSharp.fluid} alt="" />
                 </div>
                 <div>
-                    <Img className="client-logo" fluid={data.spotify.childImageSharp.fluid} />
+                    <Img className="client-logo" fluid={data.spotify.childImageSharp.fluid} alt="" />
                 </div>
                 <div>
-                    <Img className="client-logo" fluid={data.google.childImageSharp.fluid} />
+                    <Img className="client-logo" fluid={data.google.childImageSharp.fluid} alt="" />
                 </div>
             </Slider>
             </Logos>

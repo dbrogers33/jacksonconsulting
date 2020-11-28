@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Img from "gatsby-image/withIEPolyfill" //<-- IE polyfill
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
-import CTA from "../components/cta"
+
 
 const Container = styled.div`
     width: 90%;
@@ -87,6 +87,9 @@ const MemberLink = styled(Link)`
 
 const IndexPage = ({ data }) => (
   <>
+    <SEO
+      title="Our Team"
+    />
     <Hero 
       headline="Meet the Team"
       copy="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist witha specific task for an existing company that just needs a professional solution."
@@ -104,6 +107,7 @@ const IndexPage = ({ data }) => (
                     objectFit="cover"
                     objectPosition="50% 50%"
                     className="image"
+                    alt={member.firstname + " " + member.lastname + " headshot"}
                 />
                 </div>
           ))}

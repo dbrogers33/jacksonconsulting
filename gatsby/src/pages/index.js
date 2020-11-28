@@ -216,10 +216,11 @@ const CardLink = styled(Link)`
     z-index: 5;
 `
 
-
 const IndexPage = ({ data }) => (
   <>
-
+    <SEO
+      title="Providing a Better Safety Culture"
+    />
       <Hero 
         headline="safety consulting done the right way." 
         copy="“We go the extra effort to make sure that your company is not only meeting government regulations, but develop a custom plan so your team can manage themselves.” - Justin Jackson" 
@@ -237,7 +238,7 @@ const IndexPage = ({ data }) => (
     <About>
       <div className="container">
         <div>
-          <Img fluid={data.about.childImageSharp.fluid} />
+          <Img fluid={data.about.childImageSharp.fluid} alt="" />
         </div>
         <div className="vertical-center">
           <h2>Why choose jackson consulting firm for your safety consultant?</h2>
@@ -257,7 +258,7 @@ const IndexPage = ({ data }) => (
               <h3>Onsite Safety Staffing and Support</h3>
               <p>JCF focuses more on being a professional employer advocate service by providing onsite professional support tailored to the client's need.</p>
               <div className="round-button vertical-center">
-                <img src="/arrow.svg" style={{ width: '35%', margin: '0 auto' }}/>
+                <img src="/arrow.svg" style={{ width: '35%', margin: '0 auto' }} alt="" />
               </div>
             </div>
           
@@ -266,7 +267,7 @@ const IndexPage = ({ data }) => (
               <h3>Safety Training</h3>
               <p>Providing safety training for your employees is the right thing to do. We understand that training is expensive and difficult to schedule.</p>
               <div className="round-button vertical-center">
-                <img src="/arrow.svg" style={{ width: '35%', margin: '0 auto' }}/>
+                <img src="/arrow.svg" style={{ width: '35%', margin: '0 auto' }} alt="" />
               </div>
             </div>
           
@@ -275,7 +276,7 @@ const IndexPage = ({ data }) => (
               <h3>Site and Facility Safety Audits</h3>
               <p>Job site and facility audits are a necessary part of any safety program. Sometimes you may need an outside set of eyes.</p>
               <div className="round-button vertical-center">
-                <img src="/arrow.svg" style={{ width: '35%', margin: '0 auto' }}/>
+                <img src="/arrow.svg" style={{ width: '35%', margin: '0 auto' }} alt="" />
               </div>
             </div>
         
@@ -290,7 +291,7 @@ const IndexPage = ({ data }) => (
         <h2>Meet the team you’ll work with</h2>
         <TeamMembers>
           {data.allSanityTeam.nodes.map((member) => (
-            <div className="card">
+            <div key={member.id} className="card">
               <CardLink to={'/team/' + member.slug.current + '/'} style={{ transform: 'translateX(-50%)' }}/>
               <h3 key={member.firstname}>{member.firstname} {member.lastname}</h3>
               <p>{member.jobtitle}</p>
@@ -300,6 +301,7 @@ const IndexPage = ({ data }) => (
                 objectFit="cover"
                 objectPosition="50% 50%"
                 className="image"
+                alt={member.firstname + " " + member.lastname + " headshot"}
               />
             </div>
           ))}
@@ -336,6 +338,7 @@ export const query = graphql`
     }
     allSanityTeam {
       nodes {
+        id
         firstname
         lastname
         jobtitle

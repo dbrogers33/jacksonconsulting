@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Hero from '../components/Hero'
 import Img from "gatsby-image/withIEPolyfill" //<-- IE polyfill
 import CTA from "../components/cta"
+import SEO from "../components/seo"
 
 const Container = styled.div`
   width: 90%;
@@ -26,8 +27,11 @@ const Wrapper = styled.div`
 export default function ServicePage({ data: { team } }) {
   return (
     <>
+    <SEO
+      title={team.firstname + " " + team.lastname + " | " + team.jobtitle}
+    />
     <Hero
-        headline={team.firstname + ' ' + team.lastname}
+        headline={team.firstname + " " + team.lastname}
         copy={team.jobtitle}
     />
       <Container>
@@ -37,6 +41,7 @@ export default function ServicePage({ data: { team } }) {
             objectFit="cover"
             objectPosition="50% 50%"
             className="image"
+            alt={team.firstname + " " + team.lastname + " headshot"}
             />
           </div>
           <div className="grid-item">
