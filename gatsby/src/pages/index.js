@@ -220,7 +220,7 @@ const IndexPage = ({ data }) => (
   <>
     <SEO
       title="Providing a Better Safety Culture"
-      description="ackson Consulting Firm serves companies of all sizes, in varioius industries to provide a professionally tailored solution to achieve safety success with a proactive safety culture. Our firrm can serve companies needing assistance from creating an entire program as a start-up or to assist with a specfic task for an existing company that needs a professional solution. All of our servicecs are professionally taileored to each client to ensure the client recieves the true assistance they are needing without overselling. At Jackson Consulting Firm we value our client relationship by making sure your success is our end goal."
+      description="Jackson Consulting Firm serves companies of all sizes, in varioius industries to provide a professionally tailored solution to achieve safety success with a proactive safety culture. Our firrm can serve companies needing assistance from creating an entire program as a start-up or to assist with a specfic task for an existing company that needs a professional solution. All of our servicecs are professionally taileored to each client to ensure the client recieves the true assistance they are needing without overselling. At Jackson Consulting Firm we value our client relationship by making sure your success is our end goal."
     />
       <Hero 
         headline="safety consulting done the right way." 
