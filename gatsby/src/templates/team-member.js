@@ -9,11 +9,18 @@ const Container = styled.div`
   width: 90%;
   max-width: 1200px;
   margin: 2rem auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  .grid-item {
-      padding: 2rem;
+  @media only screen and (min-width: 650px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    .grid-item {
+        padding: 2rem;
+    }
   }
+`
+const Wrapper = styled.div`
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 `
 
 export default function ServicePage({ data: { team } }) {
@@ -39,7 +46,10 @@ export default function ServicePage({ data: { team } }) {
           </div>
         
       </Container>
-      <CTA />
+      <Wrapper>
+        <CTA />
+      </Wrapper>
+      
     </>
   );
 }

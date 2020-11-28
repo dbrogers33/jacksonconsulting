@@ -35,6 +35,7 @@ const Form = styled.div`
   textarea {
     font-family: 'Open Sans';
     width: 100%;
+    height: 6rem;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;

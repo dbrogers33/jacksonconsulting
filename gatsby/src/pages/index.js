@@ -158,7 +158,7 @@ const TeamMembers = styled.div`
       width: 40%;
     }
     width: 100%;
-    margin: 3rem 0;
+    margin: 3rem 0 0 0;
     position: relative;
     border-radius: .5rem;
     &:hover {
@@ -291,6 +291,7 @@ const IndexPage = ({ data }) => (
         <TeamMembers>
           {data.allSanityTeam.nodes.map((member) => (
             <div className="card">
+              <CardLink to={'/team/' + member.slug.current + '/'} style={{ transform: 'translateX(-50%)' }}/>
               <h3 key={member.firstname}>{member.firstname} {member.lastname}</h3>
               <p>{member.jobtitle}</p>
               <div className="gradient"></div>
@@ -338,6 +339,9 @@ export const query = graphql`
         firstname
         lastname
         jobtitle
+        slug {
+          current
+        }
         image {
           asset {
             fluid(maxWidth: 500) {

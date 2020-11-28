@@ -20,7 +20,7 @@ const CTABlock = styled.div`
       margin-left: auto;
     }
     @media only screen and (min-width: 650px) {
-      margin: 4rem;
+      margin: 4rem 4rem 8rem 4rem;
     }
 `
 
