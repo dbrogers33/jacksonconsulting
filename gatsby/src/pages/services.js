@@ -32,6 +32,30 @@ const Services = styled.div`
     font-weight: 800;
     margin-right: 1rem;
   }
+  .featureServices {
+    @media only screen and (min-width: 996px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    margin: 3rem 0;
+    .service {
+      text-decoration: none;
+      font-family: 'Open Sans';
+      color: #767676;
+      padding: 1rem 2rem;
+      @media only screen and (max-width: 996px) {
+        margin: 1rem 0;
+        display: block;
+      }
+      border: solid var(--green) 2px;
+      border-radius: 5px;
+      transition: ease .2s;
+      &:hover {
+        background: var(--green);
+        color: var(--blue);
+      }
+    }
+  }
 `
 
 const IndexPage = ({ data }) => (
@@ -42,10 +66,10 @@ const IndexPage = ({ data }) => (
     />
     <Services>
       <h2>Featured Services</h2>
-      <div>
+      <div className="featureServices">
       {data.allSanityServices.nodes.map((service) => (
             <div key={service.id}>
-              <Link to={'/services/' + service.slug.current + '/'}>{service.service}</Link>
+              <Link className="service" to={'/services/' + service.slug.current + '/'}>{service.service}</Link>
             </div>
           ))}
       </div>
