@@ -14,23 +14,13 @@ const Services = styled.div`
     @media only screen and (min-width: 650px) {
       column-count: 2;
     }
-    list-style-type: none;
     font-family: 'Open Sans';
     line-height: 1.75rem;
     font-size: 18px;
     color: #767676;
     list-style-position: outside;
   }
-  li {
-    text-indent: -1em;
-  }
-  li:before {
-    content: "+";
-    color: var(--green);
-    font-family: 'Open Sans';
-    font-weight: 800;
-    margin-right: 1rem;
-  }
+ 
   .featureServices {
     @media only screen and (min-width: 996px) {
       display: flex;
