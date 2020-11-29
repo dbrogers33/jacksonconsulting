@@ -64,7 +64,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* General sidebar styles */
 .bm-menu {
   background: #fff;
-  padding: 2.5em 1.5em 0;
+  padding: 2.5em 0 0;
   font-size: 1.15em;
 }
  
@@ -76,7 +76,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  padding: 0.8em;
 }
  
 /* Individual item */

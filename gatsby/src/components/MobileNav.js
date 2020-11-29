@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { slide as Menu } from 'react-burger-menu'
 import styled from 'styled-components'
+import SEO from "./seo"
 
 const MenuWrapper = styled.div`
     width: 100%;
@@ -20,10 +21,19 @@ const MenuWrapper = styled.div`
 `
 const StyledLink = styled(Link)`
     font-family: 'Oswald';
-    margin: 1rem;
+    margin: 1.5rem 1.5rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     color: var(--blue);
     text-decoration: none;
+`
+const ContactBar = styled.div`
+  width: 100%;
+  padding-left: 1.5rem;
+  p {
+    color: var(--blue);
+    margin-bottom: .2rem;
+  }
 `
  
 class Example extends React.Component {
@@ -41,6 +51,10 @@ class Example extends React.Component {
                 <StyledLink id="about" className="menu-item" href="/about/">About</StyledLink>
                 <StyledLink id="services" className="menu-item" href="/services/">Services</StyledLink>
                 <StyledLink id="contact" className="menu-item" href="/contact/">Contact</StyledLink>
+                <ContactBar>
+                  <p>270-254-0261</p>
+                  <p>info@jacksonconsultingfirmllc.com</p>
+                </ContactBar>
             </Menu>
         </MenuWrapper>
     );
