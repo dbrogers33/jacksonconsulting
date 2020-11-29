@@ -25,8 +25,8 @@ const StyledLink = styled(Link)`
     text-transform: uppercase;
     color: var(--blue);
     text-decoration: none;
-    &:active {
-      border: none;
+    &:focus {
+      outline: none;
     }
 `
 const ContactBar = styled.div`
