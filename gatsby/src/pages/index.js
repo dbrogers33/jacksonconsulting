@@ -224,7 +224,7 @@ const IndexPage = ({ data }) => (
     />
       <Hero 
         headline="safety consulting done the right way." 
-        copy="“We go the extra effort to make sure that your company is not only meeting government regulations, but develop a custom plan so your team can manage themselves.” - Justin Jackson" 
+        copy="“We go the extra effort to make sure that your company is not only meeting government regulations but develop a custom plan so your team can manage themselves.” - Justin Jackson" 
         image={data.justin.childImageSharp.fluid}>
         <Button link="/hire-us/">Hire Us</Button>
       </Hero>
@@ -243,7 +243,7 @@ const IndexPage = ({ data }) => (
         </div>
         <div className="vertical-center">
           <h2>Why choose jackson consulting firm for your safety consultant?</h2>
-          <p>Jackson Consulting Firm serves companies of all sizes, in varioius industries to provide a professionally tailored solution to achieve safety success with a proactive safety culture. Our firrm can serve companies needing assistance from creating an entire program as a start-up or to assist with a specfic task for an existing company that needs a professional solution. All of our servicecs are professionally taileored to each client to ensure the client recieves the true assistance they are needing without overselling. At Jackson Consulting Firm we value our client relationship by making sure your success is our end goal.</p>
+          <p>Jackson Consulting Firm serves companies of all sizes in various industries to provide a professionally tailored solution to achieve safety success with a proactive safety culture. Our firm serves companies needing assistance in creating an entire program as a start-up or with a specific task for an existing company that needs a professional solution. All of our services are professionally tailored to each client to ensure the client receives the assistance they are needing without overselling. At Jackson Consulting Firm, we value our client relationship by making sure your success is our end goal.</p>
         </div>
       </div>
     </About>

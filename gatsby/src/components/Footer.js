@@ -50,7 +50,7 @@ export default function Footer() {
       <Grid>
         <div>
           <h3>About Us</h3>
-          <p>Jackson Consulting Firm, LLC specilzes in safety training, consulting and recruitment for both local and national size companies. We primarly serve the states of Kentucky and Tennessee but can partner with clients anywhere.</p>
+          <p>Jackson Consulting Firm, LLC specializes in safety training, consulting, and recruitment for both local and national size companies. We primarily serve the states of Kentucky and Tennessee but can partner with clients anywhere.</p>
         </div>
         <div>
           <h3>Services</h3>

@@ -61,11 +61,11 @@ const IndexPage = ({ data }) => (
   <>
     <SEO
       title="Our Services"
-      description="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist witha specific task for an existing company that just needs a professional solution."
+      description="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist with a specific task for an existing company that just needs a professional solution."
     />
     <Hero 
       headline="Here's how we can improve your company"
-      copy="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist witha specific task for an existing company that just needs a professional solution."
+      copy="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist with a specific task for an existing company that just needs a professional solution."
     />
     <Services>
       <h2>Featured Services</h2>
@@ -86,12 +86,12 @@ const IndexPage = ({ data }) => (
         <li>Employee Processing Set-Up Assistance (Physicals, Drug Testing, Training, etc.)</li>
         <li>Lock-Out/Tag-Out Assessments and Plans</li>
         <li>Recordkeeping Assitance (OSHA 300 & Insurance)</li>
-        <li>Safety Mettings - Topic Development</li>
+        <li>Safety Meetings - Topic Development</li>
         <li>Employee Staffing & Recruiting Assistance</li>
         <li>Ergonomic Assessments & Training</li>
         <li>Goal Setting & Program Tracking</li>
         <li>Incident Investigation/Emergency Response</li>
-        <li>Industrail Hygiene Monitoring (Noise/Air Sampling)</li>
+        <li>Industrial Hygiene Monitoring (Noise/Air Sampling)</li>
         <li>JSA/TSA/JHA/AHA Development</li>
         <li>Lock-Out/Tag-Out Assessments and Procedure Development</li>
         <li>Personal Protective Equipment Assessments</li>
@@ -101,27 +101,27 @@ const IndexPage = ({ data }) => (
         <li>Safety Culture Appraisals</li>
         <li>Safety Data Sheet Management Program</li>
         <li>Safety Meetings</li>
-        <li>Site Specific Plan Development</li>
+        <li>Site-Specific Plan Development</li>
         <li>Workers Compensation Claims Assistance</li>
       </ul>
 
       <h2>Training Courses</h2>
       <ul>
-        <li>Annual OSHA Traing - Client Tailored</li>
+        <li>Annual OSHA Training - Client Tailored</li>
         <li>New Hire Orientation - Client Tailored</li>
         <li>Aerial Lift</li>
         <li>Scissor Lift</li>
         <li>Arc Flash Awareness</li>
         <li>ATSSA Certified Flagger Courses</li>
-        <li>Boodborne Pathogen</li>
+        <li>Booldborne Pathogen</li>
         <li>Confined Space</li>
         <li>CPR & First Aid</li>
-        <li>Drug Free Workplace Training</li>
+        <li>Drug-Free Workplace Training</li>
         <li>Electrical Safety</li>
         <li>Emergency Response Planning</li>
         <li>Ergonomics</li>
         <li>Fall Protection</li>
-        <li>Forklif (Powered Industrail Vehicle)</li>
+        <li>Forklift (Powered Industrial Vehicle)</li>
         <li>Global Harmonization System (GHS) (Hazard Communication)</li>
         <li>HAZWOPER</li>
         <li>Hearing Protection</li>
