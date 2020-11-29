@@ -255,7 +255,7 @@ const IndexPage = ({ data }) => (
         <div className="grid">
           
             <div className="card">
-            <CardLink to="/services/onsite-safety-staffing-and-support/"></CardLink>
+            <CardLink to="/services/onsite-safety-staffing-and-support/" style={{ transform: 'translateX(-50%)' }}></CardLink>
               <h3>Onsite Safety Staffing and Support</h3>
               <p>JCF focuses more on being a professional employer advocate service by providing onsite professional support tailored to the client's need.</p>
               <div className="round-button vertical-center">
@@ -264,7 +264,7 @@ const IndexPage = ({ data }) => (
             </div>
           
             <div className="card">
-              <CardLink to="/services/safety-training/"></CardLink>
+              <CardLink to="/services/safety-training/" style={{ transform: 'translateX(-50%)' }}></CardLink>
               <h3>Safety Training</h3>
               <p>Providing safety training for your employees is the right thing to do. We understand that training is expensive and difficult to schedule.</p>
               <div className="round-button vertical-center">
@@ -273,7 +273,7 @@ const IndexPage = ({ data }) => (
             </div>
           
             <div className="card">
-            <CardLink to="/services/site-facility-safety-audits/"></CardLink>
+            <CardLink to="/services/site-facility-safety-audits/" style={{ transform: 'translateX(-50%)' }}></CardLink>
               <h3>Site and Facility Safety Audits</h3>
               <p>Job site and facility audits are a necessary part of any safety program. Sometimes you may need an outside set of eyes.</p>
               <div className="round-button vertical-center">

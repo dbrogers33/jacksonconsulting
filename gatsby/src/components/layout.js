@@ -22,10 +22,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Nav />
       <SEO title={data.title} />
       <GlobalStyles />
       <Typography />
-      <Nav />
       <div>
         <main>{children}</main>
       </div>

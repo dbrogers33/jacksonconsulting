@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import { slide as Menu } from 'react-burger-menu'
 import styled from 'styled-components'
-import SEO from "./seo"
 
 const MenuWrapper = styled.div`
     width: 100%;
@@ -26,6 +25,9 @@ const StyledLink = styled(Link)`
     text-transform: uppercase;
     color: var(--blue);
     text-decoration: none;
+    &:active {
+      border: none;
+    }
 `
 const ContactBar = styled.div`
   width: 100%;
@@ -33,6 +35,7 @@ const ContactBar = styled.div`
   p {
     color: var(--blue);
     margin-bottom: .2rem;
+    font-size: .85rem;
   }
 `
  
