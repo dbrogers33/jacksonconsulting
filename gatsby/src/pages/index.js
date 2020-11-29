@@ -224,7 +224,7 @@ const IndexPage = ({ data }) => (
     />
       <Hero 
         headline="safety consulting done the right way." 
-        copy="“We go the extra effort to make sure that your company is not only meeting government regulations but develop a custom plan so your team can manage themselves.” - Justin Jackson" 
+        copy="“We go the extra mile to make sure that your company is not only meeting government regulations but develop a custom plan so your team can manage themselves.” - Justin Jackson" 
         image={data.justin.childImageSharp.fluid}>
         <Button link="/hire-us/">Hire Us</Button>
       </Hero>
@@ -257,7 +257,7 @@ const IndexPage = ({ data }) => (
             <div className="card">
             <CardLink to="/services/onsite-safety-staffing-and-support/" style={{ transform: 'translateX(-50%)' }}></CardLink>
               <h3>Onsite Safety Staffing and Support</h3>
-              <p>JCF focuses more on being a professional employer advocate service by providing onsite professional support tailored to the client's need.</p>
+              <p>JCF focuses more on being a professional employer advocate service by providing onsite support tailored to the client's need.</p>
               <div className="round-button vertical-center">
                 <img src="/arrow.svg" style={{ width: '35%', margin: '0 auto' }} alt="" />
               </div>

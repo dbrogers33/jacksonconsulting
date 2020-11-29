@@ -68,14 +68,14 @@ const IndexPage = ({ data }) => (
       </div>
       <h2>Consulting Services</h2>
       <ul>
-        <li>Breath & Alchol Testing (BAT) - DOT/NON-DOT</li>
+        <li>Breath & Alcohol Testing (BAT) - DOT/NON-DOT</li>
         <li>Claims Case Managers</li>
         <li>Contractor Management Program</li>
         <li>Drug-Testing - DOT/NON-DOT</li>
         <li>Employee Interviews</li>
         <li>Employee Processing Set-Up Assistance (Physicals, Drug Testing, Training, etc.)</li>
         <li>Lock-Out/Tag-Out Assessments and Plans</li>
-        <li>Recordkeeping Assitance (OSHA 300 & Insurance)</li>
+        <li>Recordkeeping Assistance (OSHA 300 & Insurance)</li>
         <li>Safety Meetings - Topic Development</li>
         <li>Employee Staffing & Recruiting Assistance</li>
         <li>Ergonomic Assessments & Training</li>
