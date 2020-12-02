@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Img from "gatsby-image/withIEPolyfill" //<-- IE polyfill
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
+import CTA from '../components/CTA'
 
 
 const Container = styled.div`
@@ -23,7 +24,7 @@ const TeamMembers = styled.div`
   }
   .card {
     @media only screen and (min-width: 650px) {
-      width: 40%;
+      width: 28%;
     }
     width: 100%;
     margin: 3rem 0;
@@ -113,6 +114,7 @@ const IndexPage = ({ data }) => (
                 </div>
           ))}
         </TeamMembers>
+        <CTA />
    </Container>
   </>
 )

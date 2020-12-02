@@ -229,12 +229,12 @@ const IndexPage = ({ data }) => (
         <Button link="/hire-us/">Hire Us</Button>
       </Hero>
 
-    <Referrals>
+    {/* <Referrals>
       <div className="container">
         <h3>clients that trust us</h3>
         <LogoSlider />
       </div>
-    </Referrals>
+    </Referrals> */}
 
     <About>
       <div className="container">
