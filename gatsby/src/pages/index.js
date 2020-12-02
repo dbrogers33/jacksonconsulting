@@ -224,8 +224,8 @@ const IndexPage = ({ data }) => (
     />
       <Hero 
         headline="safety consulting done the right way." 
-        copy="“We go the extra mile to make sure that your company is not only meeting government regulations but develop a custom plan so your team can manage themselves.” - Justin Jackson" 
-        image={data.justin.childImageSharp.fluid}>
+        copy="“WE strive to go the extra mile for our clients by having a vested interest in your company by leading the safety culture with our professionally tailored services. Our firm's success is makuing sure our clients succeed.” - Justin Jackson" 
+        image={data.hero.childImageSharp.fluid}>
         <Button link="/hire-us/">Hire Us</Button>
       </Hero>
 
@@ -289,7 +289,7 @@ const IndexPage = ({ data }) => (
     <Team>
       <div className="container">
         <h4>certified and trusted partners</h4>
-        <h2>Meet the team you’ll work with</h2>
+        <h2>meet our leadership team</h2>
         <TeamMembers>
           {data.allSanityTeam.nodes.map((member) => (
             <div key={member.id} className="card">
@@ -319,7 +319,7 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    justin: file(relativePath: { eq: "justin-hero.png" }) {
+    hero: file(relativePath: { eq: "logo-hero.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.

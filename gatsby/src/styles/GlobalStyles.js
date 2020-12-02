@@ -14,11 +14,12 @@ const GlobalStyles = createGlobalStyle`
     }
   /* Fixes the image in hero seciton */
   .styled-image {
-    margin-top: -4rem;
-    @media only screen and (min-width: 650px) {
-      position: absolute !important;
-      bottom: 0;
-      width: 100%;
+    margin-top: 8rem;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 4rem;
+    @media only screen and (min-width: 650px) { 
+      width: 75%;
       height: auto;
     }
   }

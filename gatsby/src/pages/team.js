@@ -92,7 +92,7 @@ const IndexPage = ({ data }) => (
       description="Jackson Consulting Firms enables the best employees and contractors to make your company safer. Meet some of the staff that you will be working with."
     />
     <Hero 
-      headline="Meet the Team"
+      headline="meet our leadership team"
       copy="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist with a specific task for an existing company that just needs a professional solution."
     />
    <Container>
