@@ -27,7 +27,6 @@ exports.createPages = async ({graphql, actions}) => {
               email
               jobtitle
               lastname
-              bio
               id
               slug {
                 current

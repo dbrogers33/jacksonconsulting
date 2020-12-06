@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import Img from "gatsby-image/withIEPolyfill" //<-- IE polyfill
 import CTA from "../components/cta"
 import SEO from "../components/seo"
+import BlockContent from "../components/block-content"
 
 const Container = styled.div`
   width: 90%;
@@ -48,7 +49,7 @@ export default function ServicePage({ data: { team } }) {
           <div className="grid-item">
             <p><b>Phone: </b>{team.phone}</p>
             <p><b>Email: </b>{team.email}</p>
-            <p>{team.bio}</p>
+            <BlockContent blocks={team._rawBio} />
           </div>
         
       </Container>
@@ -68,7 +69,7 @@ export const query = graphql`
       lastname
       jobtitle
       id
-      bio
+      _rawBio
       email
       phone
       image {
