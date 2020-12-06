@@ -224,7 +224,7 @@ const IndexPage = ({ data }) => (
     />
       <Hero 
         headline="safety consulting done the right way." 
-        copy="“WE strive to go the extra mile for our clients by having a vested interest in your company by leading the safety culture with our professionally tailored services. Our firm's success is makuing sure our clients succeed.” - Justin Jackson" 
+        copy="“We strive to go the extra mile for our clients by having a vested interest in your company by leading the safety culture with our professionally tailored services. Our firm's success is makuing sure our clients succeed.” - Justin Jackson" 
         image={data.hero.childImageSharp.fluid}>
         <Button link="/hire-us/">Hire Us</Button>
       </Hero>
