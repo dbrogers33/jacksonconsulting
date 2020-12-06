@@ -53,7 +53,7 @@ export default {
         {
             title: 'Bio',
             name: 'bio',
-            type: 'text'
+            type: 'blockContent'
           }
     ],
 

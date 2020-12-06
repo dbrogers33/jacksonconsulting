@@ -48,7 +48,7 @@ class Example extends React.Component {
     // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
         <MenuWrapper>
-            <div className="logo"><img className="logo" src="logo.svg" alt="Jackson Consulting Firm Logo" /></div>
+            <div className="logo"><img className="logo" src="/logo.svg" alt="Jackson Consulting Firm Logo" /></div>
             <Menu right>
                 <StyledLink id="home" className="menu-item" href="/">Home</StyledLink>
                 <StyledLink id="about" className="menu-item" href="/about/">About</StyledLink>

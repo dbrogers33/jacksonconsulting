@@ -51,11 +51,12 @@ const IndexPage = ({ data }) => (
   <>
     <SEO
       title="Our Services"
-      description="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist with a specific task for an existing company that just needs a professional solution."
+      description="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist with a specific task for an existing company that just needs a professional solution. We can provide anything from part-time, full-time, or on a custom"
     />
     <Hero 
       headline="Here's how we can improve your company"
-      copy="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist with a specific task for an existing company that just needs a professional solution."
+      copy="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist with a specific task for an existing company that just needs a professional solution. We can provide anything from part-time, full-time, or on a custom"
+      image={data.hero.childImageSharp.fluid}
     />
     <Services>
       <h2>Featured Services</h2>
@@ -147,6 +148,15 @@ export const query = graphql`
         }
         service
         id
+      }
+    }
+    hero: file(relativePath: { eq: "services.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }

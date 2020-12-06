@@ -26,10 +26,16 @@ const HeroWrapper = styled.div`
         align-content: center;
         flex-direction: column;
         padding-bottom: 4rem;
+        @media only screen and (max-width: 650px) {
+            padding-bottom: 0px;
+        }
     }
     .hero-image {
         position: relative;
         height: auto;
+        @media only screen and (max-width: 650px) {
+            margin-top: -2rem;
+        }
     }
 `
 

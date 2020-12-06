@@ -7,20 +7,20 @@ import SEO from "../components/seo"
 import Hero from "../components/Hero"
 import CTA from "../components/cta"
 import Button from '../components/Button'
-import LogoSlider from '../components/LogoSlider'
+// import LogoSlider from '../components/LogoSlider'
 
-const Referrals = styled.div`
-  background: var(--gray);
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2.5rem 0;
-    h3 {
-      text-align: center;
-    }
-  }
-`
+// const Referrals = styled.div`
+//   background: var(--gray);
+//   .container {
+//     width: 90%;
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     padding: 2.5rem 0;
+//     h3 {
+//       text-align: center;
+//     }
+//   }
+// `
 const About = styled.div`
   .container {
     width: 90%;

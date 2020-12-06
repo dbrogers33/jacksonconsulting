@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components';
-
+import { graphql } from 'gatsby'
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
 import CTA from '../components/cta'
@@ -30,15 +30,16 @@ li:before {
 }
 `
 
-const SecondPage = () => (
+const SecondPage = ({ data }) => (
   <>
     <SEO
       title="About Us"
       description="We focus more on being a professional employer advocate service by providing onsite support rather than the typical consult and leave approach."
     />
-    <Hero 
+    <Hero
       headline="A REDEFINED APPROACH TO PROFESSIONAL CONSULTING"
       copy="We focus more on being a professional employer advocate service by providing onsite support rather than the typical consult and leave approach."
+      image={data.hero.childImageSharp.fluid}
     />
 
     <About>
@@ -69,3 +70,17 @@ const SecondPage = () => (
 )
 
 export default SecondPage
+
+export const query = graphql`
+  query {
+    hero: file(relativePath: { eq: "family.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

@@ -84,6 +84,7 @@ const IndexPage = () => (
                 <input type='text' name='Last Name' placeholder="Last Name" required />
                 <input type='text' name='Company' placeholder="Company Name" />
                 <input type='email' name='Email' placeholder="Email Address" required />
+                <input type='phone' name='Phone' placeholder="Phone Number" required />
                 <textarea name='Message' placeholder="What can Jackson Consulting Firm help you with?" required />
                 <button>Submit</button>
               </Form>

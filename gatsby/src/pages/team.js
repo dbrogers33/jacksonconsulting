@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Img from "gatsby-image/withIEPolyfill" //<-- IE polyfill
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
-import CTA from '../components/CTA'
+import CTA from '../components/cta'
 
 
 const Container = styled.div`
