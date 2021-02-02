@@ -3,9 +3,11 @@ module.exports = {
     title: `Jackson Consulting Services`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    siteUrl: `https://jacksonconsultingfirmllc.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-sanity`,
       options: {
