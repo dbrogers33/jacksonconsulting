@@ -1,10 +1,8 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 import styled from 'styled-components'
-import Img from "gatsby-image/withIEPolyfill" //<-- IE polyfill
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
-import CTA from '../components/cta'
 
 
 const Container = styled.div`
@@ -86,7 +84,7 @@ const MemberLink = styled(Link)`
     transform: translateX(-50%);
 `
 
-const IndexPage = ({ data }) => (
+const IndexPage = ({  }) => (
   <>
     <SEO
       title="Our Team"
