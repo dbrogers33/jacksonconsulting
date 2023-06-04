@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 const HeroWrapper = styled.div`
     background: var(--blue);
@@ -49,7 +49,7 @@ export default function Hero({ children, image, headline, copy }) {
                 {children}
             </div>
             <div className="hero-image"> 
-                <Img className="styled-image" fluid={image} alt="" />
+                <StaticImage className="styled-image" src="../images/logo-hero.png" alt="" />
             </div>
         </div>
     </HeroWrapper>

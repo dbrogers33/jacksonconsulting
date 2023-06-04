@@ -97,7 +97,8 @@ const IndexPage = ({ data }) => (
       copy="Our firm can serve companies needing assistance from creating an entire program as a start-up or to assist with a specific task for an existing company that just needs a professional solution."
     />
    <Container>
-    <TeamMembers>
+    <h1>Team Members coming soon</h1>
+    {/* <TeamMembers>
           {data.allSanityTeam.nodes.map((member) => (
                 <div className="card">
                     <MemberLink to={member.slug.current}></MemberLink>
@@ -114,31 +115,10 @@ const IndexPage = ({ data }) => (
                 </div>
           ))}
         </TeamMembers>
-        <CTA />
+        <CTA /> */}
    </Container>
   </>
 )
 
 export default IndexPage
 
-export const query = graphql`
-  query {
-    allSanityTeam {
-        nodes {
-          firstname
-          lastname
-          jobtitle
-          slug {
-              current
-          }
-          image {
-            asset {
-              fluid(maxWidth: 500) {
-                ...GatsbySanityImageFluid
-              }
-            }
-          }
-        }
-      }
-  }
-`

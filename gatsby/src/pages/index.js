@@ -2,10 +2,10 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import styled from 'styled-components';
 
-import Img from "gatsby-image/withIEPolyfill" //<-- IE polyfill
+import { StaticImage } from "gatsby-plugin-image"
+
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
-import CTA from "../components/cta"
 import Button from '../components/Button'
 // import LogoSlider from '../components/LogoSlider'
 
@@ -224,8 +224,7 @@ const IndexPage = ({ data }) => (
     />
       <Hero 
         headline="safety consulting done the right way." 
-        copy="“We strive to go the extra mile for our clients by having a vested interest in your company by leading the safety culture with our professionally tailored services. Our firm's success is making sure our clients succeed.” - Justin Jackson" 
-        image={data.hero.childImageSharp.fluid}>
+        copy="“We strive to go the extra mile for our clients by having a vested interest in your company by leading the safety culture with our professionally tailored services. Our firm's success is making sure our clients succeed.” - Justin Jackson" >
         <Button link="/hire-us/">Hire Us</Button>
       </Hero>
 
@@ -239,7 +238,7 @@ const IndexPage = ({ data }) => (
     <About>
       <div className="container">
         <div>
-          <Img fluid={data.about.childImageSharp.fluid} alt="" />
+          <StaticImage src="../images/about.png" alt="" />
         </div>
         <div className="vertical-center">
           <h2>Why choose jackson consulting firm for your safety consultant?</h2>
@@ -286,7 +285,9 @@ const IndexPage = ({ data }) => (
       </div>
     </Services>
 
-    <Team>
+
+    {/* REMOVED TEAM MEMBERS UNTIL MORE ARE ADDED */}
+    {/* <Team>
       <div className="container">
         <h4>certified and trusted partners</h4>
         <h2>meet our leadership team</h2>
@@ -311,49 +312,9 @@ const IndexPage = ({ data }) => (
       <div className="cta-container">
         <CTA />
       </div>
-    </Team>
+    </Team> */}
   </>
 )
 
 export default IndexPage
 
-export const query = graphql`
-  query {
-    hero: file(relativePath: { eq: "logo-hero.png" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fluid(quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    about: file(relativePath: { eq: "about.png" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fluid(quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    allSanityTeam {
-      nodes {
-        id
-        firstname
-        lastname
-        jobtitle
-        slug {
-          current
-        }
-        image {
-          asset {
-            fluid(maxWidth: 500) {
-              ...GatsbySanityImageFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`

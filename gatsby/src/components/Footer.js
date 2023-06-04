@@ -64,7 +64,8 @@ export default function Footer() {
         <div>
           <h3>Quick Links</h3>
           <ul>
-              <li><FooterLink to="/team/">Our Team</FooterLink></li>
+              {/* REMOVING UNTIL MORE TEAM MEMBERS ARE ADDED */}
+              {/* <li><FooterLink to="/team/">Our Team</FooterLink></li> */}
               <li><FooterLink to="/about/">About Us</FooterLink></li>
               <li><FooterLink to="/contact/">Contact Us</FooterLink></li>
               <li><FooterLink to="/hire-us/">Hire Us</FooterLink></li>

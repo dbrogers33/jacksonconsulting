@@ -28,16 +28,16 @@ const Wrapper = styled.div`
 export default function ServicePage({ data: { team } }) {
   return (
     <>
-    <SEO
+    {/* <SEO
       title={team.firstname + " " + team.lastname + " | " + team.jobtitle}
       description={team.firstname + " " + team.lastname + " is the " + team.jobtitle + " at Jackson Consulting Firm. They are here to help you to develop the best safety program for your company."}
-    />
-    <Hero
+    /> */}
+    {/* <Hero
         headline={team.firstname + " " + team.lastname}
         copy={team.jobtitle}
-    />
+    /> */}
       <Container>
-          <div className="grid-item">
+          {/* <div className="grid-item">
           <Img 
             fluid={team.image.asset.fluid}
             objectFit="cover"
@@ -50,7 +50,8 @@ export default function ServicePage({ data: { team } }) {
             <p><b>Phone: </b>{team.phone}</p>
             <p><b>Email: </b>{team.email}</p>
             <BlockContent blocks={team._rawBio} />
-          </div>
+          </div> */}
+          <h1>coming soon</h1>
         
       </Container>
       <Wrapper>
@@ -61,24 +62,4 @@ export default function ServicePage({ data: { team } }) {
   );
 }
 
-// This needs to be dynamic based on the slug passed in via context in gatsby-node.js
-export const query = graphql`
-  query($slug: String!) {
-    team: sanityTeam(slug: { current: { eq: $slug } }) {
-      firstname
-      lastname
-      jobtitle
-      id
-      _rawBio
-      email
-      phone
-      image {
-        asset {
-          fluid(maxWidth: 500) {
-            ...GatsbySanityImageFluid
-          }
-        }
-      }
-    }
-  }
-`;
+
