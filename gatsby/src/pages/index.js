@@ -238,7 +238,7 @@ const IndexPage = ({ data }) => (
     <About>
       <div className="container">
         <div>
-          <StaticImage src="../images/about.png" alt="" />
+          <StaticImage src="../images/about.png" alt="" layout="fullWidth"/>
         </div>
         <div className="vertical-center">
           <h2>Why choose jackson consulting firm for your safety consultant?</h2>

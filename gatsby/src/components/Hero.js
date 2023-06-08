@@ -49,7 +49,7 @@ export default function Hero({ children, image, headline, copy }) {
                 {children}
             </div>
             <div className="hero-image"> 
-                <StaticImage className="styled-image" src="../images/logo-hero.png" alt="" />
+                <StaticImage className="styled-image" src="../images/logo-hero.png" alt="Jackson Consulting Logo" layout='fullWidth' />
             </div>
         </div>
     </HeroWrapper>
